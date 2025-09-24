@@ -5,12 +5,40 @@
 /**
  * FIT SIZE: 768PX
  */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    /**
+     * COMPONENTS
+     */
+
+    /* Card */
+    .card-inline {
+        grid-template-columns: 207px 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    /**
+     * MAIN – INSIDE
+     */
+
+    /* Hero Section */
+    .hero .title {
+        font-size: var(--fs-h1) !important;
+        font-weight: var(--fw-bold) !important;
+        line-height: var(--lh-h1) !important;
+    }
+}
 
 /**
  * FIT SIZE: 992px
  */
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    /**
+     * MAIN – INSIDE
+     */
+
+    /* Highlights */
+    .highlights .wrapper { grid-template-columns: repeat(2, 1fr); }
+}
 
 /**
  * FIT SIZE: 1440px
