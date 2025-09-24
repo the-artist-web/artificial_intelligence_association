@@ -22,6 +22,7 @@
     font-size: var(--fs-p) !important;
     font-weight: var(--fw-regular) !important;
     line-height: var(--lh-p) !important;
+    color: var(--second-color) !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +30,7 @@
     transition: all 0.4s;
 }
 
-.header .nav-link:hover { color: var(--green-color) !important; }
+.header .nav-link:hover { color: var(--text-color) !important; }
 
 .header .nav-link.active {
     border-bottom: 2px solid var(--text-color) !important;
