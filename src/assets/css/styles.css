@@ -7,7 +7,21 @@
      * COLORS
      */
     
+    /* Primary */
+    --soft-green-color: #B8EACB;
+    --green-yellow-color: #E3FD8F;
+    --green-color: #21A598;
+    --blue-color: #1ba9df;
+    --blue-dark-color: #024768;
+    --purple-color: #5446F5;
 
+    /* Neutral */
+    --bg-color: #f1f1f1;
+    --text-color: #010B38;
+    --white-color: #ffffff;
+    --second-bg-color: #F4F4F4;
+    --second-color: #010B3899;
+    --border-color: #E1E2E5;
 
     /**
      * TYPOGRAPHY
@@ -92,7 +106,7 @@ textarea { display: inline-block; }
 
 a {
     font-family: var(--font-family) !important;
-    color: var() !important;
+    color: var(--text-color) !important;
     text-decoration: none !important;
 }
 
@@ -109,7 +123,7 @@ button,
 textarea {
     font-family: var(--font-family) !important;
     box-shadow: 0 0 0 transparent !important;
-    color: var() !important;
+    color: var(--second-color) !important;
     background: none;
     border: none;
 }
@@ -122,13 +136,13 @@ textarea,
     width: 100%;
 }
 
-input::placeholder { color: var() !important; }
+input::placeholder { color: var(--second-color) !important; }
 
-textarea::placeholder { color: var() !important; }
+textarea::placeholder { color: var(--second-color) !important; }
 
-select { color: var() !important; }
+select { color: var(--second-color) !important; }
 
-select[selected] { color: var() !important; }
+select[selected] { color: var(--second-color) !important; }
 
 textarea { resize: none !important; }
 
@@ -145,18 +159,15 @@ html {
 
 body {
     font-family: var(--font-family) !important;
-    background-color: var();
-    color: var() !important;
+    background-color: var(--bg-color);
+    color: var(--text-color) !important;
     font-size: normal;
     font-weight: normal;
     display: flex;
     flex-direction: column;
 }
 
-/* body[lang="en"] {
-    --font-family: ;
-    letter-spacing: 1px;
-} */
+/* body[lang="en"] { --font-family: ; } */
 
 body[lang="ar"] { --font-family: "IBM Plex Sans Arabic", sans-serif; }
 
@@ -173,8 +184,8 @@ body {
 }
 
 ::selection {
-  background-color: var();
-  color: var();
+  background-color: var(--blue-color);
+  color: var(--bg-color);
 }
 
 /* ------------------------------------------------------------ *\
@@ -325,17 +336,80 @@ small,
 /**
  * TEXT
  */
+.text-soft-green-color { color: var(--soft-green-color) !important; }
 
+.text-white-color { color: var(--white-color) !important; }
 
+.text-green-yellow-color { color: var(--green-yellow-color) !important; }
+
+.text-green-color { color: var(--green-color) !important; }
+
+.text-blue-color { color: var(--blue-color) !important; }
+
+.text-blue-dark-color { color: var(--blue-dark-color) !important; }
+
+.text-purple-color { color: var(--purple-color) !important; }
+
+.text-bg-color { color: var(--bg-color) !important; }
+
+.text-color { color: var(--text-color) !important; }
+
+.text-second-bg-color { color: var(--second-bg-color) !important; }
+
+.text-second-color { color: var(--second-color) !important; }
+
+.text-border-color { color: var(--border-color) !important; }
 
 /**
  * BG
  */
+.bg-soft-green-color { background-color: var(--soft-green-color) !important; }
 
+.bg-white-color { background-color: var(--white-color) !important; }
 
+.bg-green-yellow-color { background-color: var(--green-yellow-color) !important; }
+
+.bg-green-color { background-color: var(--green-color) !important; }
+
+.bg-blue-color { background-color: var(--blue-color) !important; }
+
+.bg-blue-dark-color { background-color: var(--blue-dark-color) !important; }
+
+.bg-purple-color { background-color: var(--purple-color) !important; }
+
+.bg-color { background-color: var(--bg-color) !important; }
+
+.bg-text-color { background-color: var(--text-color) !important; }
+
+.bg-second-bg-color { background-color: var(--second-bg-color) !important; }
+
+.bg-second-color { background-color: var(--second-color) !important; }
+
+.bg-border-color { background-color: var(--border-color) !important; }
 
 /**
  * BORDER
  */
+.border-soft-green-color { border-color: var(--soft-green-color) !important; }
 
+.border-white-color { border-color: var(--white-color) !important; }
 
+.border-green-yellow-color { border-color: var(--green-yellow-color) !important; }
+
+.border-green-color { border-color: var(--green-color) !important; }
+
+.border-blue-color { border-color: var(--blue-color) !important; }
+
+.border-blue-dark-color { border-color: var(--blue-dark-color) !important; }
+
+.border-purple-color { border-color: var(--purple-color) !important; }
+
+.border-bg-color { border-color: var(--bg-color) !important; }
+
+.border-text-color { border-color: var(--text-color) !important; }
+
+.border-second-bg-color { border-color: var(--second-bg-color) !important; }
+
+.border-second-color { border-color: var(--second-color) !important; }
+
+.border-color { border-color: var(--border-color) !important; }

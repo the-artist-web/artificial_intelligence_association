@@ -28,7 +28,38 @@
  * COMPONENTS
  */
 
+/* Logo */
+.logo .img-logo {
+  min-width: max-content;
+  max-width: max-content;
+  min-height: 45px;
+  max-height: 45px;
+}
+
 /* Icon button */
+.icon-btn {
+  border-radius: var(--rounded-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-p) !important;
+  font-weight: var(--fw-medium) !important;
+  --state-layer-bg: var(--text-color);
+}
+
+.icon-btn.large {
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
+}
+
+.icon-btn.large svg {
+  min-width: 35px;
+  max-width: 35px;
+  min-height: 35px;
+  max-height: 35px;
+}
 
 /* Accordion */
 
@@ -41,6 +72,9 @@
 /* Breadcrumb */
 
 /* Buttons */
+.btn {
+  
+}
 
 /* Button group */
 

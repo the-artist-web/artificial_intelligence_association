@@ -3,6 +3,38 @@
 \* ------------------------------------------------------------ */
 
 /* Header */
+.header {
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+}
+
+.header .nav-link {
+    border-bottom: 2px solid transparent;
+    font-size: var(--fs-p) !important;
+    font-weight: var(--fw-regular) !important;
+    line-height: var(--lh-p) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    transition: all 0.4s;
+}
+
+.header .nav-link:hover { color: var(--green-color) !important; }
+
+.header .nav-link.active {
+    border-bottom: 2px solid var(--text-color) !important;
+    font-weight: var(--fw-medium) !important;
+}
 
 /* Footer */
 
