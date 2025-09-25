@@ -5,6 +5,7 @@
 */
 import { FixedScrolling } from "./components/FixedScrolling.js";
 import { Tooltip } from "./components/Tooltip.js";
+import { Copyright } from "./components/Copyright.js";
 import { addEventsOnElements } from "./utils.js";
 
 /**
@@ -38,4 +39,24 @@ addEventsOnElements($langs, "click", function ($elem) {
     document.documentElement.lang = lang;
 
     $elem.dataset.langs = lang;
+});
+
+/**
+ * Run copyright
+ */
+const $copyrights = document.querySelectorAll("[data-copyright]");
+Copyright($copyrights);
+
+/**
+ * Run Select
+ */
+const $select = document.querySelectorAll("[data-select]");
+$select.forEach($elem => {
+    const $options = $elem.querySelectorAll("[data-option]");
+
+    addEventsOnElements($options, "click", function ($elem) {
+        $options.forEach($elemOp => $elemOp.classList.remove("active"));
+
+        $elem.classList.add("active");
+    });
 });

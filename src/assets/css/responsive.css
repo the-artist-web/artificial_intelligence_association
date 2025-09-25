@@ -16,6 +16,26 @@
         grid-template-rows: 1fr;
     }
 
+    .card-breadcrumb .circle {
+        min-width: 55px;
+        max-width: 55px;
+        min-height: 55px;
+        max-height: 55px;
+    }
+
+    .card-breadcrumb .circle svg {
+        min-width: 25px;
+        max-width: 25px;
+        min-height: 25px;
+        max-height: 25px;
+    }
+
+    .card-breadcrumb .title {
+        font-size: var(--fs-h3) !important;
+        font-weight: var(--fw-semi-bold) !important;
+        line-height: var(--lh-h3) !important;
+    }
+
     /**
      * MAIN – INSIDE
      */
@@ -25,6 +45,13 @@
         font-size: var(--fs-h1) !important;
         font-weight: var(--fw-bold) !important;
         line-height: var(--lh-h1) !important;
+    }
+
+    /* Services Start */
+    .section-start .card-start h1 {
+        font-size: var(--fs-h1) !important;
+        font-weight: 700 !important;
+        line-height: 60px !important;
     }
 }
 
@@ -38,6 +65,11 @@
 
     /* Highlights */
     .highlights .wrapper { grid-template-columns: repeat(2, 1fr); }
+
+    /* Auth Section */
+    .auth .card { padding: 80px; }
+
+    .auth .card .wrapper { grid-template-columns: repeat(2, 1fr); }
 }
 
 /**

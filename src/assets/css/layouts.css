@@ -7,10 +7,39 @@
  */
 
 /* Form Box */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
 
 /* Label */
+.form-box .form-label {
+  font-size: var(--fs-h6) !important;
+  font-weight: var(--fw-medium) !important;
+  line-height: var(--lh-h6) !important;
+}
 
 /* Input */
+.form-box .input-wrapper {
+  position: relative;
+  --state-layer-bg: var(--second-color);
+}
+
+.form-box .input-wrapper .form-control {
+  border: 1px solid var(--border-color) !important;
+  background-color: var(--bg-color) !important;
+  border-radius: var(--rounded-4) !important;
+  color: var(--text-color) !important;
+  font-size: var(--fs-p) !important;
+  font-weight: var(--fw-medium) !important;
+  line-height: var(--lh-p) !important;
+  padding-inline: 14px !important;
+  min-height: 40px;
+  max-height: 40px;
+}
 
 /* Input Group */
 
@@ -19,10 +48,30 @@
 /* Textarea */
 
 /* Select */
+.form-box .input-wrapper .absolute {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: var(--third-color) !important;
+  pointer-events: none;
+}
+
+html[dir="ltr"] .form-box .input-wrapper .absolute { 
+  right: 14px;
+  left: auto; 
+}
 
 /* Checks & Radios */
 
 /* Validation */
+.form-box .validation {
+  font-size: var(--fs-p) !important;
+  font-weight: var(--fw-medium) !important;
+  line-height: var(--lh-p) !important;
+  margin-block-start: -5px;
+  color: rgba(255, 0, 0, 0.862) !important;
+}
 
 /**
  * COMPONENTS
@@ -76,7 +125,7 @@
   border: 2px solid transparent !important;
   font-size: var(--fs-p) !important;
   font-weight: var(--fw-medium) !important;
-  border-radius: var(--rounded-8);
+  border-radius: var(--rounded-4);
   padding-inline: 45px;
   display: flex;
   align-items: center;
@@ -112,6 +161,12 @@
 
 .btn.btn-yellow-green {
   background-color: var(--green-yellow-color) !important;
+  color: var(--text-color) !important;
+  --state-layer-bg: var(--text-color);
+}
+
+.btn-light-dark {
+  border-color: var(--text-color) !important;
   color: var(--text-color) !important;
   --state-layer-bg: var(--text-color);
 }
@@ -213,6 +268,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 16px;
 }
 
@@ -237,6 +293,53 @@
 }
 
 .card-statistics h4 { font-weight: 600 !important; }
+
+.card-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.card-breadcrumb .circle {
+  border: 2px solid var(--blue-color) !important;
+  color: var(--blue-color) !important;
+  border-radius: var(--rounded-full);
+  min-width: 45px;
+  max-width: 45px;
+  min-height: 45px;
+  max-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-breadcrumb.active .circle {
+  background-color: var(--blue-color) !important;
+  color: var(--white-color) !important;
+}
+
+.card-breadcrumb.active .yes { display: none; }
+
+.card-breadcrumb.check .user { display: none; }
+
+.card-breadcrumb.check .yes { display: flex; }
+
+.card-breadcrumb.check .yes {
+  border-color: var(--green-color) !important;
+  background-color: var(--soft-green-color) !important;
+  color: var(--green-color) !important;
+}
+
+.card-breadcrumb .circle svg {
+  min-width: 22px;
+  max-width: 22px;
+  min-height: 22px;
+  max-height: 22px;
+}
+
+.card-breadcrumb.active .title { font-weight: 700 !important; } 
 
 /* Carousel */
 
