@@ -254,7 +254,11 @@ html[dir="ltr"] .form-box .input-wrapper .absolute {
   --state-layer-bg: var(--text-color);
 }
 
-.card-inline .img-card { border-radius: var(--rounded-10); }
+.card-inline .img-card { 
+  border-radius: var(--rounded-10);
+  min-height: 207px; 
+  max-height: 207px; 
+}
 
 .card-inline .card-body {
   display: flex;
