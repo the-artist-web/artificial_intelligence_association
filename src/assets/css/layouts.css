@@ -256,8 +256,8 @@ html[dir="ltr"] .form-box .input-wrapper .absolute {
 
 .card-inline .img-card { 
   border-radius: var(--rounded-10);
-  min-height: 207px; 
-  max-height: 207px; 
+  min-height: 180px; 
+  max-height: 180px; 
 }
 
 .card-inline .card-body {
