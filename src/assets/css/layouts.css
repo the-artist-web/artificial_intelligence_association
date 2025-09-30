@@ -17,6 +17,7 @@
 
 /* Label */
 .form-box .form-label {
+  color: var(--text-color) !important;
   font-size: var(--fs-h6) !important;
   font-weight: var(--fw-medium) !important;
   line-height: var(--lh-h6) !important;
@@ -91,8 +92,10 @@ html[dir="ltr"] .form-box .input-wrapper .absolute {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-size: var(--fs-p) !important;
   font-weight: var(--fw-medium) !important;
+  line-height: 14px;
   --state-layer-bg: var(--text-color);
 }
 
@@ -126,6 +129,7 @@ html[dir="ltr"] .form-box .input-wrapper .absolute {
   font-size: var(--fs-p) !important;
   font-weight: var(--fw-medium) !important;
   border-radius: var(--rounded-4);
+  color: white !important;
   padding-inline: 45px;
   display: flex;
   align-items: center;
@@ -142,32 +146,35 @@ html[dir="ltr"] .form-box .input-wrapper .absolute {
 
 .btn.btn-blue-dark {
   background-color: var(--blue-dark-color) !important;
-  color: var(--bg-color) !important;
   --state-layer-bg: var(--bg-color);
 }
 
 .btn.btn-blue {
   background-color: var(--blue-color) !important;
-  color: var(--bg-color) !important;
-  --state-layer-bg: var(--text-color);
+  --state-layer-bg: black;
 }
 
 .btn.btn-light {
-  border-color: var(--border-color) !important;
+  border-color: white !important;
   background-color: transparent !important;
-  color: var(--text-color) !important;
-  --state-layer-bg: var(--text-color);
+  --state-layer-bg: black;
 }
 
 .btn.btn-yellow-green {
   background-color: var(--green-yellow-color) !important;
-  color: var(--text-color) !important;
+  color: black !important;
   --state-layer-bg: var(--text-color);
 }
 
 .btn-light-dark {
-  border-color: var(--text-color) !important;
-  color: var(--text-color) !important;
+  border-color: black !important;
+  color: black !important;
+  --state-layer-bg: var(--text-color);
+}
+
+[data-theme="dark"] .btn-light-dark {
+  border-color: white !important;
+  color: white !important;
   --state-layer-bg: var(--text-color);
 }
 
@@ -177,7 +184,7 @@ html[dir="ltr"] .form-box .input-wrapper .absolute {
 .card-programs {
   position: relative;
   background-color: var(--second-bg-color) !important;
-  color: var(--bg-color) !important;
+  color: white !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -235,6 +242,8 @@ html[dir="ltr"] .form-box .input-wrapper .absolute {
   --state-layer-bg: var(--text-color);
 }
 
+[data-theme="dark"] .card-block { background-color: #1e2536 !important; }
+
 .card-block .card-body {
   display: flex;
   flex-direction: column;
@@ -253,6 +262,8 @@ html[dir="ltr"] .form-box .input-wrapper .absolute {
   padding: 16px;
   --state-layer-bg: var(--text-color);
 }
+
+[data-theme="dark"] .card-inline { background-color: #1e2536 !important; }
 
 .card-inline .img-card { 
   border-radius: var(--rounded-10);
@@ -289,6 +300,7 @@ html[dir="ltr"] .form-box .input-wrapper .absolute {
 }
 
 .card-statistics .circle svg {
+  color: black !important;
   opacity: 0.7;
   min-width: 28px;
   max-width: 28px;
@@ -305,6 +317,8 @@ html[dir="ltr"] .form-box .input-wrapper .absolute {
   text-align: center;
   gap: 16px;
 }
+
+.card-breadcrumb .title { color: var(--text-color) !important; }
 
 .card-breadcrumb .circle {
   border: 2px solid var(--blue-color) !important;
@@ -346,6 +360,15 @@ html[dir="ltr"] .form-box .input-wrapper .absolute {
 .card-breadcrumb.active .title { font-weight: 700 !important; } 
 
 /* Carousel */
+
+/* Theme */
+[data-theme="light"] .light { display: none; }
+
+[data-theme="light"] .dark { display: block; }
+
+[data-theme="dark"] .light { display: block; }
+
+[data-theme="dark"] .dark { display: none; }
 
 /* Close button */
 
